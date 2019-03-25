@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BooErGame", "BooErGame\BooErGame.vcxproj", "{F6C86874-6233-1DEB-AB71-CE90171BFB3F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BooErEngine", "BooErEngine\BooErEngine.vcxproj", "{12A1FC2D-7E56-7523-074B-6FFA73FF6B27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6C86874-6233-1DEB-AB71-CE90171BFB3F}.Debug|Win32.ActiveCfg = Debug Win32|x64
+		{F6C86874-6233-1DEB-AB71-CE90171BFB3F}.Debug|Win32.Build.0 = Debug Win32|x64
+		{F6C86874-6233-1DEB-AB71-CE90171BFB3F}.Debug|x64.ActiveCfg = Debug|x64
+		{F6C86874-6233-1DEB-AB71-CE90171BFB3F}.Debug|x64.Build.0 = Debug|x64
+		{F6C86874-6233-1DEB-AB71-CE90171BFB3F}.Release|Win32.ActiveCfg = Release Win32|x64
+		{F6C86874-6233-1DEB-AB71-CE90171BFB3F}.Release|Win32.Build.0 = Release Win32|x64
+		{F6C86874-6233-1DEB-AB71-CE90171BFB3F}.Release|x64.ActiveCfg = Release|x64
+		{F6C86874-6233-1DEB-AB71-CE90171BFB3F}.Release|x64.Build.0 = Release|x64
+		{12A1FC2D-7E56-7523-074B-6FFA73FF6B27}.Debug|Win32.ActiveCfg = Debug Win32|x64
+		{12A1FC2D-7E56-7523-074B-6FFA73FF6B27}.Debug|Win32.Build.0 = Debug Win32|x64
+		{12A1FC2D-7E56-7523-074B-6FFA73FF6B27}.Debug|x64.ActiveCfg = Debug|x64
+		{12A1FC2D-7E56-7523-074B-6FFA73FF6B27}.Debug|x64.Build.0 = Debug|x64
+		{12A1FC2D-7E56-7523-074B-6FFA73FF6B27}.Release|Win32.ActiveCfg = Release Win32|x64
+		{12A1FC2D-7E56-7523-074B-6FFA73FF6B27}.Release|Win32.Build.0 = Release Win32|x64
+		{12A1FC2D-7E56-7523-074B-6FFA73FF6B27}.Release|x64.ActiveCfg = Release|x64
+		{12A1FC2D-7E56-7523-074B-6FFA73FF6B27}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

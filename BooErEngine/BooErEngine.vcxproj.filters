@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="BooErEngine">
+      <UniqueIdentifier>{12A1FC2D-7E56-7523-074B-6FFA73FF6B27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BooErEngine\Loaders">
+      <UniqueIdentifier>{0B2B2E22-778C-0B30-00FA-51E26C5A42EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BooErEngine\Rendering">
+      <UniqueIdentifier>{DF6872CF-4BD5-2DCA-14C9-C52780F44F32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\BooErEngine\BooErEngine.h">
+      <Filter>BooErEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BooErEngine\Controller.h">
+      <Filter>BooErEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BooErEngine\Loaders\ShaderMgr.h">
+      <Filter>BooErEngine\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BooErEngine\Rendering\GLRender.h">
+      <Filter>BooErEngine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Def.h" />
+    <ClInclude Include="src\IncClient.h" />
+    <ClInclude Include="src\IncEngine.h" />
+    <ClInclude Include="src\Main.h" />
+    <ClInclude Include="src\booPCH.h" />
+    <ClInclude Include="src\BooErEngine\Loaders\ImgMgr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BooErEngine\BooErEngine.cpp">
+      <Filter>BooErEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BooErEngine\Controller.cpp">
+      <Filter>BooErEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BooErEngine\Loaders\ShaderMgr.cpp">
+      <Filter>BooErEngine\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BooErEngine\Rendering\GLRender.cpp">
+      <Filter>BooErEngine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\booPCH.cpp" />
+    <ClCompile Include="src\BooErEngine\Loaders\ImgMgr.cpp" />
+  </ItemGroup>
+</Project>
