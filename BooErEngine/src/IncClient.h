@@ -8,3 +8,6 @@
 
 /*Entry Point Declaration*/
 #include "Main.h"
+
+/*Logger System*/
+#include "BooErEngine\Utils\Log.h"

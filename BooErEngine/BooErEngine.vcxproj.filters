@@ -32,6 +32,7 @@
     <ClInclude Include="src\IncEngine.h" />
     <ClInclude Include="src\Main.h" />
     <ClInclude Include="src\booPCH.h" />
+    <ClInclude Include="src\BooErEngine\Utils\Log.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BooErEngine\BooErEngine.cpp">
@@ -50,5 +51,6 @@
       <Filter>BooErEngine\Rendering</Filter>
     </ClCompile>
     <ClCompile Include="src\booPCH.cpp" />
+    <ClCompile Include="src\BooErEngine\Utils\Log.cpp" />
   </ItemGroup>
 </Project>
