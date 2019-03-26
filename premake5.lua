@@ -21,17 +21,42 @@ configurations {   -- Dropdown Solution Configurations
 
 outputdir = "%{cfg.buildcfg}_%{cfg.system}_%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"]     = "BooErEngine/Mods/GLFW/include"
+IncludeDir["Glad"]     = "BooErEngine/Mods/Glad/include"
+IncludeDir["ImGui"]    = "BooErEngine/Mods/imgui"
+IncludeDir["glm"]      = "BooErEngine/Mods/glm"
+IncludeDir["SOIL2"]    = "BooErEngine/Mods/SOIL2/incs"
+IncludeDir["GSL"]      = "BooErEngine/Mods/GSL/include"
+IncludeDir["spdlog"]   = "BooErEngine/Mods/spdlog/include"
+
+group "Dependencies"
+
+include "BooErEngine/Mods/GLFW"
+include "BooErEngine/Mods/Glad"
+include "BooErEngine/Mods/imgui"
+include "BooErEngine/Mods/SOIL2"
+
+ group ""
+
+--[[ GLOBAL Precompiled Header   
+pchheader "booPCH.h"
+pchsource "BooErEngine/src/booPCH.cpp"
+]]
+
 
 project "BooErEngine" 
     location "BooErEngine"
     kind "SharedLib"
     language "C++"
 
+    pchheader "booPCH.h"
+    pchsource "BooErEngine/src/booPCH.cpp"
+
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir    ("bint/" .. outputdir .. "/%{prj.name}")
 
-pchheader "booPCH.h"
-pchsource "BooErEngine/src/booPCH.cpp"
 
     files {
 
@@ -41,12 +66,27 @@ pchsource "BooErEngine/src/booPCH.cpp"
     }
 
     includedirs {
+        "%{prj.name}/src",
+        "%{IncludeDir.spdlog}",
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}",
+        "%{IncludeDir.ImGui}",
+        "%{IncludeDir.glm}",
+        "%{IncludeDir.SOIL2}",
+        "%{IncludeDir.GSL}",
+        "%{IncludeDir.boost}",
+        "$(BOOST)",
+    }
 
-        "%{prj.name}/src"
+    libdirs { 
+        "$(BOOST)/stage/lib" 
     }
 
     links { 
-
+        "GLFW",
+		"Glad",
+		"ImGui",
+        "SOIL2";
 		"opengl32.lib"
 	}
 
@@ -96,11 +136,22 @@ project "BooErGame"
 
     includedirs {
 
-        "BooErEngine/src"
+        "BooErEngine/src",
+        "%{prj.name}/src",
+        "%{IncludeDir.spdlog}",
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}",
+        "%{IncludeDir.ImGui}",
+        "%{IncludeDir.glm}",
+        "%{IncludeDir.SOIL2}",
+        "%{IncludeDir.GSL}",
+        "$(BOOST)",
     }
 
+    libdirs { 
+        "$(BOOST)/stage/lib" 
+    }
   
-
     links {
         "BooErEngine",
 		"opengl32.lib"

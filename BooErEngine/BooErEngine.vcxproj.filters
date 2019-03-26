@@ -18,6 +18,9 @@
     <ClInclude Include="src\BooErEngine\Controller.h">
       <Filter>BooErEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\BooErEngine\Loaders\ImgMgr.h">
+      <Filter>BooErEngine\Loaders</Filter>
+    </ClInclude>
     <ClInclude Include="src\BooErEngine\Loaders\ShaderMgr.h">
       <Filter>BooErEngine\Loaders</Filter>
     </ClInclude>
@@ -29,7 +32,6 @@
     <ClInclude Include="src\IncEngine.h" />
     <ClInclude Include="src\Main.h" />
     <ClInclude Include="src\booPCH.h" />
-    <ClInclude Include="src\BooErEngine\Loaders\ImgMgr.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BooErEngine\BooErEngine.cpp">
@@ -38,6 +40,9 @@
     <ClCompile Include="src\BooErEngine\Controller.cpp">
       <Filter>BooErEngine</Filter>
     </ClCompile>
+    <ClCompile Include="src\BooErEngine\Loaders\ImgMgr.cpp">
+      <Filter>BooErEngine\Loaders</Filter>
+    </ClCompile>
     <ClCompile Include="src\BooErEngine\Loaders\ShaderMgr.cpp">
       <Filter>BooErEngine\Loaders</Filter>
     </ClCompile>
@@ -45,6 +50,5 @@
       <Filter>BooErEngine\Rendering</Filter>
     </ClCompile>
     <ClCompile Include="src\booPCH.cpp" />
-    <ClCompile Include="src\BooErEngine\Loaders\ImgMgr.cpp" />
   </ItemGroup>
 </Project>

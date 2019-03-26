@@ -1,4 +1,6 @@
+#include "booPCH.h"
 #include "BooErGame.h"
+
 
 BooErGame::BooErGame()
 {
