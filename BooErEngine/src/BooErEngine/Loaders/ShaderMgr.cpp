@@ -3,14 +3,11 @@
 
 namespace boo
 {
-
     ShaderMgr::ShaderMgr()
     {
     }
 
-
     ShaderMgr::~ShaderMgr()
     {
     }
-
 }

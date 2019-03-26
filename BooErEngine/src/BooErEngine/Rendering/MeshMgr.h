@@ -3,10 +3,10 @@
 
 namespace boo
 {
-    class BOO_API GLRender
+    class BOO_API MeshMgr
     {
     public:
-        GLRender();
-        ~GLRender();
+        MeshMgr();
+        ~MeshMgr();
     };
 }

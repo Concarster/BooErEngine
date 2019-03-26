@@ -4,7 +4,6 @@
 
 namespace boo
 {
-
     class BOO_API Controller
     {
     private:
@@ -19,5 +18,4 @@ namespace boo
     };
 
     Controller* Generate();
-
 }

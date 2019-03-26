@@ -3,7 +3,6 @@
 
 namespace boo
 {
-
     BooErEngine::BooErEngine()
     {
     }
@@ -12,5 +11,4 @@ namespace boo
     BooErEngine::~BooErEngine()
     {
     }
-
 }

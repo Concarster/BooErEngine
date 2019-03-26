@@ -203,6 +203,14 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\BooErEngine\Events\AppEvent.h" />
+    <ClInclude Include="src\BooErEngine\Events\Event.h" />
+    <ClInclude Include="src\BooErEngine\Events\KeyEvent.h" />
+    <ClInclude Include="src\BooErEngine\Events\MouseEvent.h" />
+    <ClInclude Include="src\BooErEngine\Rendering\ParticleMgr.h" />
+    <ClInclude Include="src\BooErEngine\Rendering\SpriteMgr.h" />
+    <ClInclude Include="src\BooErEngine\Rendering\MeshMgr.h" />
+    <ClInclude Include="src\BooErEngine\Rendering\RenderMgr.h" />
     <ClInclude Include="src\BooErEngine\Utils\Log.h" />
     <ClInclude Include="src\BooErEngine\BooErEngine.h" />
     <ClInclude Include="src\BooErEngine\Controller.h" />
@@ -216,6 +224,10 @@
     <ClInclude Include="src\booPCH.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\BooErEngine\Rendering\ParticleMgr.cpp" />
+    <ClCompile Include="src\BooErEngine\Rendering\SpriteMgr.cpp" />
+    <ClCompile Include="src\BooErEngine\Rendering\MeshMgr.cpp" />
+    <ClCompile Include="src\BooErEngine\Rendering\RenderMgr.cpp" />
     <ClCompile Include="src\BooErEngine\Utils\Log.cpp" />
     <ClCompile Include="src\BooErEngine\BooErEngine.cpp" />
     <ClCompile Include="src\BooErEngine\Controller.cpp" />

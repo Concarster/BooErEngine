@@ -3,12 +3,10 @@
 
 namespace boo
 {
-
     class BOO_API BooErEngine
     {
     public:
         BooErEngine();
         ~BooErEngine();
     };
-
 }

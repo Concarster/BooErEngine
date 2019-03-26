@@ -7,9 +7,7 @@ namespace boo
     {
     }
 
-
     ImgMgr::~ImgMgr()
     {
     }
-
 }

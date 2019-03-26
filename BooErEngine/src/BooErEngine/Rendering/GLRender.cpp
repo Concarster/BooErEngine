@@ -3,14 +3,11 @@
 
 namespace boo
 {
-
     GLRender::GLRender()
     {
     }
 
-
     GLRender::~GLRender()
     {
     }
-
 }

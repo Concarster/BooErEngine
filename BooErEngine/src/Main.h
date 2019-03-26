@@ -14,7 +14,7 @@ int main(int argc, char** argv)
     BOO_ENGINE_WARN("Initializing Engine Logger!");
     BOO_ENGINE_TRACE("Engine Logger Initialized!");
     BOO_CLIENT_WARN("Initializing Client Logger!");
-    BOO_ENGINE_TRACE("Client Logger Initialized!");
+    BOO_CLIENT_TRACE("Client Logger Initialized!");
 
     auto Game = boo::Generate();
     Game->Begin();

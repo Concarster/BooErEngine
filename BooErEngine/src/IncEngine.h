@@ -11,5 +11,9 @@
 /*Logger System*/
 #include "BooErEngine\Utils\Log.h"
 
+/*Event's System*/
+#include "BooErEngine\Events\Event.h"
+#include "BooErEngine\Events\AppEvent.h"
+
 
 
