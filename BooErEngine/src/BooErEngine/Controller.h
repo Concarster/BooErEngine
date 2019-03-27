@@ -12,7 +12,7 @@ namespace boo
         bool m_Closed;
         bool m_Running;
 
-        /*UPtr Platform Indepedent*/
+        /* uqPtr Platform Indepedent */
         std::unique_ptr<Window> m_Window;
 
     public:
@@ -20,7 +20,13 @@ namespace boo
         virtual ~Controller();
 
         void Init();
+
         void Begin();
+
+        void OnEvent(Event& onEvent);
+
+    private:
+        bool OnWindowClosed(WindowCloseEvent& closeEvent);
     };
 
     Controller* Generate();
