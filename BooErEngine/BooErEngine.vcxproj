@@ -203,6 +203,8 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\BooErEngine\Layers\LayerSatck.h" />
+    <ClInclude Include="src\BooErEngine\Layers\Layer.h" />
     <ClInclude Include="src\BooErEngine\BooErEngine.h" />
     <ClInclude Include="src\BooErEngine\Controller.h" />
     <ClInclude Include="src\BooErEngine\Events\AppEvent.h" />
@@ -228,6 +230,8 @@
     <ClInclude Include="src\booPCH.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\BooErEngine\Layers\LayerSatck.cpp" />
+    <ClCompile Include="src\BooErEngine\Layers\Layer.cpp" />
     <ClCompile Include="src\BooErEngine\BooErEngine.cpp" />
     <ClCompile Include="src\BooErEngine\Controller.cpp" />
     <ClCompile Include="src\BooErEngine\Loaders\ImgMgr.cpp" />

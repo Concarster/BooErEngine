@@ -80,6 +80,8 @@
     <ClInclude Include="src\IncEngine.h" />
     <ClInclude Include="src\Main.h" />
     <ClInclude Include="src\booPCH.h" />
+    <ClInclude Include="src\BooErEngine\Layers\Layer.h" />
+    <ClInclude Include="src\BooErEngine\Layers\LayerSatck.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BooErEngine\BooErEngine.cpp">
@@ -122,5 +124,7 @@
       <Filter>BooErEngine\Utils</Filter>
     </ClCompile>
     <ClCompile Include="src\booPCH.cpp" />
+    <ClCompile Include="src\BooErEngine\Layers\Layer.cpp" />
+    <ClCompile Include="src\BooErEngine\Layers\LayerSatck.cpp" />
   </ItemGroup>
 </Project>

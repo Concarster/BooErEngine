@@ -183,9 +183,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\BooErGame\LayerList.h" />
     <ClInclude Include="src\BooErGame\BooErGame.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\BooErGame\LayerList.cpp" />
     <ClCompile Include="src\BooErGame\BooErGame.cpp" />
   </ItemGroup>
   <ItemGroup>

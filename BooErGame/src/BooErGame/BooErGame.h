@@ -1,6 +1,5 @@
 #pragma once
-#include "IncClient.h"
-
+#include "Main.h"
 
 class BooErGame : public boo::Controller
 {

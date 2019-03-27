@@ -19,6 +19,9 @@ int main(int argc, char** argv)
     auto Game = boo::Generate();
     Game->Begin();
     delete Game;
+
+    /* To detect Memory Leak */
+    //_CrtDumpMemoryLeaks();
 }
 
 #endif // BOO_WINDOW

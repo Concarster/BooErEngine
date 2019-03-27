@@ -33,9 +33,6 @@
 
 #define BOO_BIND_EVENT_FN(fn) std::bind(&fn, this, std::placeholders::_1)
 
-//#define _CRTDBG_ALLOC_MEM_DF        0x01  // Turn on debug allocation
-//#define _CRTDBG_MAP_ALLOC
-//#include <stdlib.h>
-//#include <crtdbg.h>
+
 
 

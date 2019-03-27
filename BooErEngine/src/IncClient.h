@@ -1,13 +1,11 @@
 #pragma once
+/*For Clients Only*/
 
-/*For Client Only*/
+/* Main Game Control*/
 #include "BooErEngine\Controller.h"
-#include "BooErEngine\BooErEngine.h"
-#include "BooErEngine\Rendering\GLRender.h"
 
-
-/*Entry Point Declaration*/
-#include "Main.h"
+/* Layers */
+#include "BooErEngine\Layers\Layer.h"
 
 /*Logger System*/
 #include "BooErEngine\Utils\Log.h"
