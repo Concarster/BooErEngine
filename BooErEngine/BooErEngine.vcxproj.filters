@@ -4,11 +4,20 @@
     <Filter Include="BooErEngine">
       <UniqueIdentifier>{12A1FC2D-7E56-7523-074B-6FFA73FF6B27}</UniqueIdentifier>
     </Filter>
+    <Filter Include="BooErEngine\Events">
+      <UniqueIdentifier>{B62474E9-A208-353F-0B69-2F92F76B1FC1}</UniqueIdentifier>
+    </Filter>
     <Filter Include="BooErEngine\Loaders">
       <UniqueIdentifier>{0B2B2E22-778C-0B30-00FA-51E26C5A42EF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="BooErEngine\Platforms">
+      <UniqueIdentifier>{D966F498-45D3-AF93-0EC7-47F17AF2D1FB}</UniqueIdentifier>
+    </Filter>
     <Filter Include="BooErEngine\Rendering">
       <UniqueIdentifier>{DF6872CF-4BD5-2DCA-14C9-C52780F44F32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BooErEngine\Utils">
+      <UniqueIdentifier>{F2A7AFF8-5EBE-AD8E-A735-39B0138B7E16}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -18,29 +27,59 @@
     <ClInclude Include="src\BooErEngine\Controller.h">
       <Filter>BooErEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\BooErEngine\Events\AppEvent.h">
+      <Filter>BooErEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BooErEngine\Events\Event.h">
+      <Filter>BooErEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BooErEngine\Events\KeyEvent.h">
+      <Filter>BooErEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BooErEngine\Events\MouseEvent.h">
+      <Filter>BooErEngine\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\BooErEngine\Loaders\ImgMgr.h">
       <Filter>BooErEngine\Loaders</Filter>
     </ClInclude>
     <ClInclude Include="src\BooErEngine\Loaders\ShaderMgr.h">
       <Filter>BooErEngine\Loaders</Filter>
     </ClInclude>
+    <ClInclude Include="src\BooErEngine\Platforms\LinWindow.h">
+      <Filter>BooErEngine\Platforms</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BooErEngine\Platforms\MaxWindow.h">
+      <Filter>BooErEngine\Platforms</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BooErEngine\Platforms\WinWindow.h">
+      <Filter>BooErEngine\Platforms</Filter>
+    </ClInclude>
     <ClInclude Include="src\BooErEngine\Rendering\GLRender.h">
       <Filter>BooErEngine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BooErEngine\Rendering\MeshMgr.h">
+      <Filter>BooErEngine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BooErEngine\Rendering\ParticleMgr.h">
+      <Filter>BooErEngine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BooErEngine\Rendering\RenderMgr.h">
+      <Filter>BooErEngine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BooErEngine\Rendering\SpriteMgr.h">
+      <Filter>BooErEngine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BooErEngine\Utils\Log.h">
+      <Filter>BooErEngine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BooErEngine\Window.h">
+      <Filter>BooErEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\Def.h" />
     <ClInclude Include="src\IncClient.h" />
     <ClInclude Include="src\IncEngine.h" />
     <ClInclude Include="src\Main.h" />
     <ClInclude Include="src\booPCH.h" />
-    <ClInclude Include="src\BooErEngine\Utils\Log.h" />
-    <ClInclude Include="src\BooErEngine\Rendering\MeshMgr.h" />
-    <ClInclude Include="src\BooErEngine\Rendering\SpriteMgr.h" />
-    <ClInclude Include="src\BooErEngine\Rendering\RenderMgr.h" />
-    <ClInclude Include="src\BooErEngine\Rendering\ParticleMgr.h" />
-    <ClInclude Include="src\BooErEngine\Events\Event.h" />
-    <ClInclude Include="src\BooErEngine\Events\KeyEvent.h" />
-    <ClInclude Include="src\BooErEngine\Events\MouseEvent.h" />
-    <ClInclude Include="src\BooErEngine\Events\AppEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BooErEngine\BooErEngine.cpp">
@@ -55,14 +94,33 @@
     <ClCompile Include="src\BooErEngine\Loaders\ShaderMgr.cpp">
       <Filter>BooErEngine\Loaders</Filter>
     </ClCompile>
+    <ClCompile Include="src\BooErEngine\Platforms\LinWindow.cpp">
+      <Filter>BooErEngine\Platforms</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BooErEngine\Platforms\MaxWindow.cpp">
+      <Filter>BooErEngine\Platforms</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BooErEngine\Platforms\WinWindow.cpp">
+      <Filter>BooErEngine\Platforms</Filter>
+    </ClCompile>
     <ClCompile Include="src\BooErEngine\Rendering\GLRender.cpp">
       <Filter>BooErEngine\Rendering</Filter>
     </ClCompile>
+    <ClCompile Include="src\BooErEngine\Rendering\MeshMgr.cpp">
+      <Filter>BooErEngine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BooErEngine\Rendering\ParticleMgr.cpp">
+      <Filter>BooErEngine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BooErEngine\Rendering\RenderMgr.cpp">
+      <Filter>BooErEngine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BooErEngine\Rendering\SpriteMgr.cpp">
+      <Filter>BooErEngine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BooErEngine\Utils\Log.cpp">
+      <Filter>BooErEngine\Utils</Filter>
+    </ClCompile>
     <ClCompile Include="src\booPCH.cpp" />
-    <ClCompile Include="src\BooErEngine\Utils\Log.cpp" />
-    <ClCompile Include="src\BooErEngine\Rendering\MeshMgr.cpp" />
-    <ClCompile Include="src\BooErEngine\Rendering\SpriteMgr.cpp" />
-    <ClCompile Include="src\BooErEngine\Rendering\RenderMgr.cpp" />
-    <ClCompile Include="src\BooErEngine\Rendering\ParticleMgr.cpp" />
   </ItemGroup>
 </Project>

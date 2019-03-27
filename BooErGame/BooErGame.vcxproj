@@ -99,7 +99,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DisableSpecificWarnings>4996;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;BOO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\BooErEngine\src;src;..\BooErEngine\Mods\spdlog\include;..\BooErEngine\Mods\GLFW\include;..\BooErEngine\Mods\Glad\include;..\BooErEngine\Mods\imgui;..\BooErEngine\Mods\glm;..\BooErEngine\Mods\SOIL2\incs;..\BooErEngine\Mods\GSL\include;$(BOOST);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
@@ -119,7 +119,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DisableSpecificWarnings>4996;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;BOO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\BooErEngine\src;src;..\BooErEngine\Mods\spdlog\include;..\BooErEngine\Mods\GLFW\include;..\BooErEngine\Mods\Glad\include;..\BooErEngine\Mods\imgui;..\BooErEngine\Mods\glm;..\BooErEngine\Mods\SOIL2\incs;..\BooErEngine\Mods\GSL\include;$(BOOST);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
@@ -139,7 +139,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DisableSpecificWarnings>4996;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;BOO_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\BooErEngine\src;src;..\BooErEngine\Mods\spdlog\include;..\BooErEngine\Mods\GLFW\include;..\BooErEngine\Mods\Glad\include;..\BooErEngine\Mods\imgui;..\BooErEngine\Mods\glm;..\BooErEngine\Mods\SOIL2\incs;..\BooErEngine\Mods\GSL\include;$(BOOST);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -163,7 +163,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DisableSpecificWarnings>4996;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;BOO_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\BooErEngine\src;src;..\BooErEngine\Mods\spdlog\include;..\BooErEngine\Mods\GLFW\include;..\BooErEngine\Mods\Glad\include;..\BooErEngine\Mods\imgui;..\BooErEngine\Mods\glm;..\BooErEngine\Mods\SOIL2\incs;..\BooErEngine\Mods\GSL\include;$(BOOST);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>

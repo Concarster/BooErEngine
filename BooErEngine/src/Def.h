@@ -22,8 +22,8 @@
 #endif
 
 #ifdef BOO_ENABLE_ASSERTS
-#define BOO_CLIENT_ASSERT(x, ...) { if(!(x)) { ON_CLIENT_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
-#define BOO_ENGINE_ASSERT(x, ...) { if(!(x)) { ON_ENGINE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+#define BOO_CLIENT_ASSERT(x, ...) { if(!(x)) { BOO_CLIENT_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+#define BOO_ENGINE_ASSERT(x, ...) { if(!(x)) { BOO_ENGINE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
 #else
 #define BOO_ASSERT(x, ...)
 #define BOO_CORE_ASSERT(x, ...)

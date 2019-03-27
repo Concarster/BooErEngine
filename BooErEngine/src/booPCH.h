@@ -13,6 +13,9 @@
 #include <unordered_map>
 #include <unordered_set>
 
+/* LOG */
+#include "BooErEngine\Utils\Log.h"
+
 /* BOOST */
 
 /* Window */

@@ -108,12 +108,12 @@ project "BooErEngine"
 
         filter "configurations:Debug"
         buildoptions "/MDd"
-        defines "DEBUG"
+        defines "BOO_DEBUG"
         symbols "On"
 
         filter "configurations:Release"
         buildoptions "/MD"
-        defines "RELEASE"
+        defines "BOO_RELEASE"
         optimize "On"
 
 
@@ -170,10 +170,10 @@ project "BooErGame"
 
         filter "configurations:Debug"
         buildoptions "/MDd"
-        defines "DEBUG"
+        defines "BOO_DEBUG"
         symbols "On"
 
         filter "configurations:Release"
         buildoptions "/MD"
-        defines "RELEASE"
+        defines "BOO_RELEASE"
         optimize "On"

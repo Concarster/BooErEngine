@@ -100,7 +100,7 @@
       <PrecompiledHeaderFile>booPCH.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <DisableSpecificWarnings>4996;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;BOO_BUILD_DLL;GLFW_INCLUDE_NONE;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;BOO_BUILD_DLL;GLFW_INCLUDE_NONE;BOO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;Mods\spdlog\include;Mods\GLFW\include;Mods\Glad\include;Mods\imgui;Mods\glm;Mods\SOIL2\incs;Mods\GSL\include;..;$(BOOST);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
@@ -125,7 +125,7 @@
       <PrecompiledHeaderFile>booPCH.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <DisableSpecificWarnings>4996;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;BOO_BUILD_DLL;GLFW_INCLUDE_NONE;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;BOO_BUILD_DLL;GLFW_INCLUDE_NONE;BOO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;Mods\spdlog\include;Mods\GLFW\include;Mods\Glad\include;Mods\imgui;Mods\glm;Mods\SOIL2\incs;Mods\GSL\include;..;$(BOOST);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
@@ -150,7 +150,7 @@
       <PrecompiledHeaderFile>booPCH.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <DisableSpecificWarnings>4996;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;BOO_BUILD_DLL;GLFW_INCLUDE_NONE;RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;BOO_BUILD_DLL;GLFW_INCLUDE_NONE;BOO_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;Mods\spdlog\include;Mods\GLFW\include;Mods\Glad\include;Mods\imgui;Mods\glm;Mods\SOIL2\incs;Mods\GSL\include;..;$(BOOST);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -179,7 +179,7 @@
       <PrecompiledHeaderFile>booPCH.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <DisableSpecificWarnings>4996;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;BOO_BUILD_DLL;GLFW_INCLUDE_NONE;RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BOO_ENGINE;BOO_WINDOW;BOO_BUILD_DLL;GLFW_INCLUDE_NONE;BOO_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;Mods\spdlog\include;Mods\GLFW\include;Mods\Glad\include;Mods\imgui;Mods\glm;Mods\SOIL2\incs;Mods\GSL\include;..;$(BOOST);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -203,20 +203,24 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\BooErEngine\BooErEngine.h" />
+    <ClInclude Include="src\BooErEngine\Controller.h" />
     <ClInclude Include="src\BooErEngine\Events\AppEvent.h" />
     <ClInclude Include="src\BooErEngine\Events\Event.h" />
     <ClInclude Include="src\BooErEngine\Events\KeyEvent.h" />
     <ClInclude Include="src\BooErEngine\Events\MouseEvent.h" />
-    <ClInclude Include="src\BooErEngine\Rendering\ParticleMgr.h" />
-    <ClInclude Include="src\BooErEngine\Rendering\SpriteMgr.h" />
-    <ClInclude Include="src\BooErEngine\Rendering\MeshMgr.h" />
-    <ClInclude Include="src\BooErEngine\Rendering\RenderMgr.h" />
-    <ClInclude Include="src\BooErEngine\Utils\Log.h" />
-    <ClInclude Include="src\BooErEngine\BooErEngine.h" />
-    <ClInclude Include="src\BooErEngine\Controller.h" />
     <ClInclude Include="src\BooErEngine\Loaders\ImgMgr.h" />
     <ClInclude Include="src\BooErEngine\Loaders\ShaderMgr.h" />
+    <ClInclude Include="src\BooErEngine\Platforms\LinWindow.h" />
+    <ClInclude Include="src\BooErEngine\Platforms\MaxWindow.h" />
+    <ClInclude Include="src\BooErEngine\Platforms\WinWindow.h" />
     <ClInclude Include="src\BooErEngine\Rendering\GLRender.h" />
+    <ClInclude Include="src\BooErEngine\Rendering\MeshMgr.h" />
+    <ClInclude Include="src\BooErEngine\Rendering\ParticleMgr.h" />
+    <ClInclude Include="src\BooErEngine\Rendering\RenderMgr.h" />
+    <ClInclude Include="src\BooErEngine\Rendering\SpriteMgr.h" />
+    <ClInclude Include="src\BooErEngine\Utils\Log.h" />
+    <ClInclude Include="src\BooErEngine\Window.h" />
     <ClInclude Include="src\Def.h" />
     <ClInclude Include="src\IncClient.h" />
     <ClInclude Include="src\IncEngine.h" />
@@ -224,16 +228,19 @@
     <ClInclude Include="src\booPCH.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\BooErEngine\Rendering\ParticleMgr.cpp" />
-    <ClCompile Include="src\BooErEngine\Rendering\SpriteMgr.cpp" />
-    <ClCompile Include="src\BooErEngine\Rendering\MeshMgr.cpp" />
-    <ClCompile Include="src\BooErEngine\Rendering\RenderMgr.cpp" />
-    <ClCompile Include="src\BooErEngine\Utils\Log.cpp" />
     <ClCompile Include="src\BooErEngine\BooErEngine.cpp" />
     <ClCompile Include="src\BooErEngine\Controller.cpp" />
     <ClCompile Include="src\BooErEngine\Loaders\ImgMgr.cpp" />
     <ClCompile Include="src\BooErEngine\Loaders\ShaderMgr.cpp" />
+    <ClCompile Include="src\BooErEngine\Platforms\LinWindow.cpp" />
+    <ClCompile Include="src\BooErEngine\Platforms\MaxWindow.cpp" />
+    <ClCompile Include="src\BooErEngine\Platforms\WinWindow.cpp" />
     <ClCompile Include="src\BooErEngine\Rendering\GLRender.cpp" />
+    <ClCompile Include="src\BooErEngine\Rendering\MeshMgr.cpp" />
+    <ClCompile Include="src\BooErEngine\Rendering\ParticleMgr.cpp" />
+    <ClCompile Include="src\BooErEngine\Rendering\RenderMgr.cpp" />
+    <ClCompile Include="src\BooErEngine\Rendering\SpriteMgr.cpp" />
+    <ClCompile Include="src\BooErEngine\Utils\Log.cpp" />
     <ClCompile Include="src\booPCH.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
