@@ -53,7 +53,7 @@ public:
 
     void OnEvent(boo::Event& onEvent) override
     {
-        //ON_CLIENT_TRACE("{0}", event);
+        BOO_CLIENT_TRACE("{0}", onEvent);
 
         /*if (onEvent.GetEventType() == boo::EventType::KeyPressed)
         {
@@ -85,7 +85,7 @@ public:
 
     void OnEvent(boo::Event& onEvent) override
     {
-        //ON_CLIENT_TRACE("{0}", event);
+        BOO_CLIENT_TRACE("{0}", onEvent);
 
         /*if (onEvent.GetEventType() == boo::EventType::KeyPressed)
         {

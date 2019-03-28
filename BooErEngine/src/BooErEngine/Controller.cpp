@@ -7,9 +7,14 @@ namespace boo
 {
 #define BIND_EVENT_FN(x) std::bind(&Controller::x, this, std::placeholders::_1)
 
+    Controller* Controller::s_Instance = nullptr;
+
     Controller::Controller()
         :m_Running(true)
     {
+        BOO_ENGINE_ASSERT(!s_Instance, "Instance Controller already exist!");
+        s_Instance = this;
+
         m_Window = std::unique_ptr<Window>(Window::Create());
         m_Window->SetEventCallBack(BIND_EVENT_FN(OnEvent));
     }

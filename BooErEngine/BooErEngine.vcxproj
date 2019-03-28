@@ -203,6 +203,8 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\BooErEngine\Platforms\OpenGL\ImGuiGLRender.h" />
+    <ClInclude Include="src\BooErEngine\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\BooErEngine\Layers\LayerSatck.h" />
     <ClInclude Include="src\BooErEngine\Layers\Layer.h" />
     <ClInclude Include="src\BooErEngine\BooErEngine.h" />
@@ -213,9 +215,9 @@
     <ClInclude Include="src\BooErEngine\Events\MouseEvent.h" />
     <ClInclude Include="src\BooErEngine\Loaders\ImgMgr.h" />
     <ClInclude Include="src\BooErEngine\Loaders\ShaderMgr.h" />
-    <ClInclude Include="src\BooErEngine\Platforms\LinWindow.h" />
-    <ClInclude Include="src\BooErEngine\Platforms\MaxWindow.h" />
-    <ClInclude Include="src\BooErEngine\Platforms\WinWindow.h" />
+    <ClInclude Include="src\BooErEngine\Platforms\Linux\LinWindow.h" />
+    <ClInclude Include="src\BooErEngine\Platforms\Max\MaxWindow.h" />
+    <ClInclude Include="src\BooErEngine\Platforms\Windows\WinWindow.h" />
     <ClInclude Include="src\BooErEngine\Rendering\GLRender.h" />
     <ClInclude Include="src\BooErEngine\Rendering\MeshMgr.h" />
     <ClInclude Include="src\BooErEngine\Rendering\ParticleMgr.h" />
@@ -230,15 +232,17 @@
     <ClInclude Include="src\booPCH.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\BooErEngine\Platforms\OpenGL\ImGuiGLRender.cpp" />
+    <ClCompile Include="src\BooErEngine\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\BooErEngine\Layers\LayerSatck.cpp" />
     <ClCompile Include="src\BooErEngine\Layers\Layer.cpp" />
     <ClCompile Include="src\BooErEngine\BooErEngine.cpp" />
     <ClCompile Include="src\BooErEngine\Controller.cpp" />
     <ClCompile Include="src\BooErEngine\Loaders\ImgMgr.cpp" />
     <ClCompile Include="src\BooErEngine\Loaders\ShaderMgr.cpp" />
-    <ClCompile Include="src\BooErEngine\Platforms\LinWindow.cpp" />
-    <ClCompile Include="src\BooErEngine\Platforms\MaxWindow.cpp" />
-    <ClCompile Include="src\BooErEngine\Platforms\WinWindow.cpp" />
+    <ClCompile Include="src\BooErEngine\Platforms\Linux\LinWindow.cpp" />
+    <ClCompile Include="src\BooErEngine\Platforms\Max\MaxWindow.cpp" />
+    <ClCompile Include="src\BooErEngine\Platforms\Windows\WinWindow.cpp" />
     <ClCompile Include="src\BooErEngine\Rendering\GLRender.cpp" />
     <ClCompile Include="src\BooErEngine\Rendering\MeshMgr.cpp" />
     <ClCompile Include="src\BooErEngine\Rendering\ParticleMgr.cpp" />

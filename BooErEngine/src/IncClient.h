@@ -9,3 +9,6 @@
 
 /*Logger System*/
 #include "BooErEngine\Utils\Log.h"
+
+/* ImGui Layer*/
+#include "BooErEngine\ImGui\ImGuiLayer.h"

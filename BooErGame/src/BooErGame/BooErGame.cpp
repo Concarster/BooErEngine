@@ -4,10 +4,10 @@
 
 BooErGame::BooErGame()
 {
-    PushLayer(new TextLayer());
-    PushLayer(new ImgLayer());
-    PushLayer(new GuiLayer());
- 
+    //PushLayer(new TextLayer());
+    //PushLayer(new ImgLayer());
+    //PushLayer(new GuiLayer());
+    PushOverLay(new boo::ImGuiLayer());
 }
 
 BooErGame::~BooErGame()
