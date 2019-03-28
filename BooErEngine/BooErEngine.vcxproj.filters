@@ -84,6 +84,8 @@
     <ClInclude Include="src\BooErEngine\Platforms\Windows\WinWindow.h">
       <Filter>BooErEngine\Platforms</Filter>
     </ClInclude>
+    <ClInclude Include="src\BooErEngine\ImputMgr.h" />
+    <ClInclude Include="src\BooErEngine\Platforms\Windows\WindowsInputMgr.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BooErEngine\BooErEngine.cpp">
@@ -130,5 +132,6 @@
     <ClCompile Include="src\BooErEngine\Platforms\Windows\WinWindow.cpp">
       <Filter>BooErEngine\Platforms</Filter>
     </ClCompile>
+    <ClCompile Include="src\BooErEngine\Platforms\Windows\WindowsInputMgr.cpp" />
   </ItemGroup>
 </Project>

@@ -203,6 +203,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\BooErEngine\ImputMgr.h" />
     <ClInclude Include="src\BooErEngine\Platforms\OpenGL\ImGuiGLRender.h" />
     <ClInclude Include="src\BooErEngine\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\BooErEngine\Layers\LayerSatck.h" />
@@ -230,6 +231,7 @@
     <ClInclude Include="src\IncEngine.h" />
     <ClInclude Include="src\Main.h" />
     <ClInclude Include="src\booPCH.h" />
+    <ClInclude Include="src\BooErEngine\Platforms\Windows\WindowsInputMgr.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BooErEngine\Platforms\OpenGL\ImGuiGLRender.cpp" />
@@ -252,6 +254,7 @@
     <ClCompile Include="src\booPCH.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\BooErEngine\Platforms\Windows\WindowsInputMgr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Mods\GLFW\GLFW.vcxproj">

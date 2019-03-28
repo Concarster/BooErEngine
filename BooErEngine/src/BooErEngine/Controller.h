@@ -1,8 +1,13 @@
 #pragma once
 #include "Def.h"
 
+///* Layer System*/
+#include "BooErEngine\Layers\LayerSatck.h"
+///* Event System*/
+#include "BooErEngine\Events\Event.h"
+#include "BooErEngine\Events\AppEvent.h"
+
 #include "Window.h"
-#include "IncEngine.h"
 
 namespace boo
 {

@@ -1,7 +1,8 @@
 #include "booPCH.h"
 #include "Controller.h"
 
-#include <GLFW\glfw3.h>
+#include "ImputMgr.h"
+#include <glad\glad.h>
 
 namespace boo
 {
@@ -83,11 +84,13 @@ namespace boo
             for (Layer* layer : m_LayerStack)
                 layer->OnUpdate();
 
+            auto[x, y] = ImputMgr::GetMousePosition();
+            BOO_ENGINE_TRACE("{0}, {1}", x, y);
+
             m_Window->OnUpdate();
             
         }
            
-       
     }
 
     bool Controller::OnWindowClosed(WindowCloseEvent & closeEvent)
