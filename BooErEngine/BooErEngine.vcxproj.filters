@@ -84,8 +84,9 @@
     <ClInclude Include="src\BooErEngine\Platforms\Windows\WinWindow.h">
       <Filter>BooErEngine\Platforms</Filter>
     </ClInclude>
-    <ClInclude Include="src\BooErEngine\ImputMgr.h" />
     <ClInclude Include="src\BooErEngine\Platforms\Windows\WindowsInputMgr.h" />
+    <ClInclude Include="src\BooErEngine\Utils\BooApiCode.h" />
+    <ClInclude Include="src\BooErEngine\InputMgr.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BooErEngine\BooErEngine.cpp">

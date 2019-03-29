@@ -7,6 +7,7 @@
 //We REMOVE this
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include "BooErEngine\Utils\BooApiCode.h"
 
 #include "BooErEngine\Controller.h"
 
@@ -41,27 +42,27 @@ namespace boo
 
         //Temporary
         /* Keyboard mapping. ImGui will use those indices to peek into the io.KeysDown[] array. */
-        io.KeyMap[ImGuiKey_Tab] = GLFW_KEY_TAB;
-        io.KeyMap[ImGuiKey_LeftArrow] = GLFW_KEY_LEFT;
-        io.KeyMap[ImGuiKey_RightArrow] = GLFW_KEY_RIGHT;
-        io.KeyMap[ImGuiKey_UpArrow] = GLFW_KEY_UP;
-        io.KeyMap[ImGuiKey_DownArrow] = GLFW_KEY_DOWN;
-        io.KeyMap[ImGuiKey_PageUp] = GLFW_KEY_PAGE_UP;
-        io.KeyMap[ImGuiKey_PageDown] = GLFW_KEY_PAGE_DOWN;
-        io.KeyMap[ImGuiKey_Home] = GLFW_KEY_HOME;
-        io.KeyMap[ImGuiKey_End] = GLFW_KEY_END;
-        io.KeyMap[ImGuiKey_Insert] = GLFW_KEY_INSERT;
-        io.KeyMap[ImGuiKey_Delete] = GLFW_KEY_DELETE;
-        io.KeyMap[ImGuiKey_Backspace] = GLFW_KEY_BACKSPACE;
-        io.KeyMap[ImGuiKey_Space] = GLFW_KEY_SPACE;
-        io.KeyMap[ImGuiKey_Enter] = GLFW_KEY_ENTER;
-        io.KeyMap[ImGuiKey_Escape] = GLFW_KEY_ESCAPE;
-        io.KeyMap[ImGuiKey_A] = GLFW_KEY_A;
-        io.KeyMap[ImGuiKey_C] = GLFW_KEY_C;
-        io.KeyMap[ImGuiKey_V] = GLFW_KEY_V;
-        io.KeyMap[ImGuiKey_X] = GLFW_KEY_X;
-        io.KeyMap[ImGuiKey_Y] = GLFW_KEY_Y;
-        io.KeyMap[ImGuiKey_Z] = GLFW_KEY_Z;
+        io.KeyMap[ImGuiKey_Tab]           = BOO_KEY_TAB;
+        io.KeyMap[ImGuiKey_LeftArrow]     = BOO_KEY_LEFT;
+        io.KeyMap[ImGuiKey_RightArrow]    = BOO_KEY_RIGHT;
+        io.KeyMap[ImGuiKey_UpArrow]       = BOO_KEY_UP;
+        io.KeyMap[ImGuiKey_DownArrow]     = BOO_KEY_DOWN;
+        io.KeyMap[ImGuiKey_PageUp]        = BOO_KEY_PAGE_UP;
+        io.KeyMap[ImGuiKey_PageDown]      = BOO_KEY_PAGE_DOWN;
+        io.KeyMap[ImGuiKey_Home]          = BOO_KEY_HOME;
+        io.KeyMap[ImGuiKey_End]           = BOO_KEY_END;
+        io.KeyMap[ImGuiKey_Insert]        = BOO_KEY_INSERT;
+        io.KeyMap[ImGuiKey_Delete]        = BOO_KEY_DELETE;
+        io.KeyMap[ImGuiKey_Backspace]     = BOO_KEY_BACKSPACE;
+        io.KeyMap[ImGuiKey_Space]         = BOO_KEY_SPACE;
+        io.KeyMap[ImGuiKey_Enter]         = BOO_KEY_ENTER;
+        io.KeyMap[ImGuiKey_Escape]        = BOO_KEY_ESCAPE;
+        io.KeyMap[ImGuiKey_A]             = BOO_KEY_A;
+        io.KeyMap[ImGuiKey_C]             = BOO_KEY_C;
+        io.KeyMap[ImGuiKey_V]             = BOO_KEY_V;
+        io.KeyMap[ImGuiKey_X]             = BOO_KEY_X;
+        io.KeyMap[ImGuiKey_Y]             = BOO_KEY_Y;
+        io.KeyMap[ImGuiKey_Z]             = BOO_KEY_Z;
 
         /*Initiliaze ImGuiGL*/
         ImGui_ImplOpenGL3_Init("#version 420");
@@ -155,14 +156,14 @@ namespace boo
 
         io.KeysDown[event.GetKeyCode()] = true;
 
-        io.KeyCtrl = io.KeysDown[GLFW_KEY_LEFT_CONTROL] || io.KeysDown[GLFW_KEY_RIGHT_CONTROL];
+        io.KeyCtrl = io.KeysDown[BOO_KEY_LEFT_CONTROL] || io.KeysDown[BOO_KEY_RIGHT_CONTROL];
         
-        io.KeyShift = io.KeysDown[GLFW_KEY_LEFT_SHIFT] || io.KeysDown[GLFW_KEY_RIGHT_SHIFT];
+        io.KeyShift = io.KeysDown[BOO_KEY_LEFT_SHIFT] || io.KeysDown[BOO_KEY_RIGHT_SHIFT];
 
-        io.KeyAlt = io.KeysDown[GLFW_KEY_LEFT_ALT] || io.KeysDown[GLFW_KEY_RIGHT_ALT];
+        io.KeyAlt = io.KeysDown[BOO_KEY_LEFT_ALT] || io.KeysDown[BOO_KEY_RIGHT_ALT];
 
         /*KeySuper is the WindowsKey*/
-        io.KeySuper = io.KeysDown[GLFW_KEY_LEFT_SUPER] || io.KeysDown[GLFW_KEY_RIGHT_SUPER];
+        io.KeySuper = io.KeysDown[BOO_KEY_LEFT_SUPER] || io.KeysDown[BOO_KEY_RIGHT_SUPER];
 
 
         return false;

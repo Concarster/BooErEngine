@@ -203,7 +203,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\BooErEngine\ImputMgr.h" />
+    <ClInclude Include="src\BooErEngine\InputMgr.h" />
     <ClInclude Include="src\BooErEngine\Platforms\OpenGL\ImGuiGLRender.h" />
     <ClInclude Include="src\BooErEngine\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\BooErEngine\Layers\LayerSatck.h" />
@@ -224,6 +224,7 @@
     <ClInclude Include="src\BooErEngine\Rendering\ParticleMgr.h" />
     <ClInclude Include="src\BooErEngine\Rendering\RenderMgr.h" />
     <ClInclude Include="src\BooErEngine\Rendering\SpriteMgr.h" />
+    <ClInclude Include="src\BooErEngine\Utils\BooApiCode.h" />
     <ClInclude Include="src\BooErEngine\Utils\Log.h" />
     <ClInclude Include="src\BooErEngine\Window.h" />
     <ClInclude Include="src\Def.h" />

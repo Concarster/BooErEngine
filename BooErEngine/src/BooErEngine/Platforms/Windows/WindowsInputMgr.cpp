@@ -6,7 +6,7 @@
 
 namespace boo
 {
-    ImputMgr* ImputMgr::s_Instance = new WindowsInputMgr();
+    InputMgr* InputMgr::s_Instance = new WindowsInputMgr();
 
     bool WindowsInputMgr::IsKeyPressedImpl(int keycode)
     {
@@ -35,6 +35,7 @@ namespace boo
         glfwGetCursorPos(window, &xpos, &ypos);
 
         return { (float)xpos, (float)ypos };
+        
     }
 
     float WindowsInputMgr::GetMouseXImpl()

@@ -1,7 +1,8 @@
 #include "booPCH.h"
 #include "Controller.h"
 
-#include "ImputMgr.h"
+#include "InputMgr.h"
+#include "BooErEngine\Utils\BooApiCode.h"
 #include <glad\glad.h>
 
 namespace boo
@@ -84,8 +85,10 @@ namespace boo
             for (Layer* layer : m_LayerStack)
                 layer->OnUpdate();
 
-            auto[x, y] = ImputMgr::GetMousePosition();
-            BOO_ENGINE_TRACE("{0}, {1}", x, y);
+            /*auto[x, y] = InputMgr::GetMousePosition();
+            BOO_ENGINE_TRACE("{0}, {1}", x, y);*/
+
+            
 
             m_Window->OnUpdate();
             

@@ -1,9 +1,9 @@
 #pragma once
-#include "BooErEngine\ImputMgr.h"
+#include "BooErEngine\InputMgr.h"
 
 namespace boo
 {
-    class WindowsInputMgr : public ImputMgr
+    class WindowsInputMgr : public InputMgr
     {
     protected:
         virtual bool IsKeyPressedImpl(int keycode) override;

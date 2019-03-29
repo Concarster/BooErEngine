@@ -3,10 +3,10 @@
 
 namespace boo
 {
-    class BOO_API ImputMgr
+    class BOO_API InputMgr
     {
     private:
-        static ImputMgr* s_Instance;
+        static InputMgr* s_Instance;
 
     public:
 
